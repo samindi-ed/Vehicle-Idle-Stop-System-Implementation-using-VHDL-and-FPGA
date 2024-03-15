@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/samin/OneDrive/Desktop/319221442/319221442/FSM116949733/FSM_MEALY/TB_isim_beh.exe" -prj "C:/Users/samin/OneDrive/Desktop/319221442/319221442/FSM116949733/FSM_MEALY/TB_beh.prj" "work.TB" 

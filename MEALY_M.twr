@@ -1,0 +1,132 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml MEALY_M.twx MEALY_M.ncd -o MEALY_M.twr MEALY_M.pcf -ucf
+MEALY_M.ucf
+
+Design file:              MEALY_M.ncd
+Physical constraint file: MEALY_M.pcf
+Device,package,speed:     xc6slx45,csg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+E<0>        |         8.838(R)|      SLOW  |         4.505(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock A
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B              |         |         |    0.292|    0.292|
+I              |         |         |    0.337|    0.337|
+V              |         |         |    0.190|    0.190|
+clk            |         |         |    2.869|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock B
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B              |         |         |    1.160|    1.160|
+I              |         |         |    1.205|    1.205|
+V              |         |         |    1.058|    1.058|
+clk            |         |         |    2.869|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock I
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B              |         |         |    0.703|    0.703|
+I              |         |         |    0.748|    0.748|
+V              |         |         |    0.601|    0.601|
+clk            |         |         |    2.869|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock S
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B              |         |         |    0.437|    0.437|
+I              |         |         |    0.482|    0.482|
+V              |         |         |    0.335|    0.335|
+clk            |         |         |    2.869|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock V
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B              |         |         |    1.079|    1.079|
+I              |         |         |    1.124|    1.124|
+V              |         |         |    0.977|    0.977|
+clk            |         |         |    2.869|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+A              |         |    2.270|         |         |
+B              |         |    2.270|         |         |
+I              |         |    2.270|         |         |
+S              |         |    2.270|         |         |
+V              |         |    2.270|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A              |E<0>           |    8.390|
+B              |E<0>           |    8.148|
+I              |E<0>           |    8.241|
+S              |E<0>           |    8.234|
+V              |E<0>           |    7.118|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Dec 08 15:02:59 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 186 MB
+
+
+

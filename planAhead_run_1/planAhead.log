@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Dec 08 14:42:11 2023
+# Process ID: 2224
+# Log file: C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -2717 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/pa.fromNetlist.tcl
+# create_project -name FSM_MEALY -dir "C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/planAhead_run_1" -part xc6slx45csg484-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/MEALY_M.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "MEALY_M.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/MEALY_M.ucf' to fileset 'constrs_1'
+# add_files [list {MEALY_M.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx45csg484-3
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MEALY_M.ngc ...
+WARNING:NetListWriters:298 - No output is written to MEALY_M.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file MEALY_M.edif ...
+ngc2edif: Total memory usage is 61196 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/FSM_MEALY.data/cache/MEALY_M_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/FSM_MEALY.data/cache/MEALY_M_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/csg484/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/MEALY_M.ucf]
+Finished Parsing UCF File [C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/MEALY_M.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 568abef9
+link_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 523.258 ; gain = 142.793
+startgroup
+set_property package_pin Y4 [get_ports {E[1]}]
+endgroup
+startgroup
+set_property package_pin W3 [get_ports {E[0]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports A]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports B]
+endgroup
+startgroup
+set_property package_pin D11 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin V5 [get_ports I]
+endgroup
+startgroup
+set_property package_pin R4 [get_ports S]
+endgroup
+save_constraints
+startgroup
+set_property package_pin U4 [get_ports V]
+endgroup
+set_property is_loc_fixed false [get_ports [list  V]]
+set_property is_loc_fixed true [get_ports [list  V]]
+set_property is_loc_fixed false [get_ports [list  V]]
+set_property is_loc_fixed true [get_ports [list  V]]
+save_constraints
+startgroup
+set_property package_pin T7 [get_ports {E[1]}]
+endgroup
+save_constraints
+startgroup
+set_property package_pin W4 [get_ports {E[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY\planAhead_pid2224.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Dec 08 15:02:19 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

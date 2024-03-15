@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/MEALY_M.xst" -ofn "C:/Users/user06/Desktop/319221442/FSM116949733/FSM_MEALY/MEALY_M.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MEALY_M.ucf -p xc6slx45-csg484-3 MEALY_M.ngc MEALY_M.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MEALY_M_map.ncd MEALY_M.ngd MEALY_M.pcf 
+par -w -intstyle ise -ol high -mt off MEALY_M_map.ncd MEALY_M.ncd MEALY_M.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MEALY_M.twx MEALY_M.ncd -o MEALY_M.twr MEALY_M.pcf -ucf MEALY_M.ucf 
+bitgen -intstyle ise -f MEALY_M.ut MEALY_M.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MEALY_M.ucf -p xc6slx45-csg484-3 MEALY_M.ngc MEALY_M.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MEALY_M_map.ncd MEALY_M.ngd MEALY_M.pcf 
+par -w -intstyle ise -ol high -mt off MEALY_M_map.ncd MEALY_M.ncd MEALY_M.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MEALY_M.twx MEALY_M.ncd -o MEALY_M.twr MEALY_M.pcf -ucf MEALY_M.ucf 
+bitgen -intstyle ise -f MEALY_M.ut MEALY_M.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MEALY_M.ucf -p xc6slx45-csg484-3 MEALY_M.ngc MEALY_M.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MEALY_M_map.ncd MEALY_M.ngd MEALY_M.pcf 
+par -w -intstyle ise -ol high -mt off MEALY_M_map.ncd MEALY_M.ncd MEALY_M.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MEALY_M.twx MEALY_M.ncd -o MEALY_M.twr MEALY_M.pcf -ucf MEALY_M.ucf 
+bitgen -intstyle ise -f MEALY_M.ut MEALY_M.ncd 
